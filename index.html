@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../library files/bootstrap-4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    
+    <title>counter</title>
+    <style>
+    </style>
+</head>
+<body>
+    <div class="w-[100vw] h-[100vh] bg-dark flex flex-column align-items-center justify-content-center">
+        <div class="text-2xl font-weight-bold text-light mb-4">COUNTER APP</div>
+        <div class="flex bg-light rounded-sm p-1" id="inc">
+            <button class="p-3 border-r-2 text-success" onclick="inc()">
++
+            </button>
+            <div class="p-3" id="res">
+                0
+            </div>
+            <button class="fs-4 p-3 border-l-2 text-danger" id="dec" onclick="dec()">
+-
+            </button>
+        </div>
+        <button class="btn btn-info mt-2 w-[145.5px]" id="reset" onclick="res()">
+reset          
+        </button>
+    </div>
+</body>
+</html>
